@@ -1,0 +1,11 @@
+div{
+    height:50px;
+    width:50px;
+    background-color:black;
+}
+ @media(width:600px){ /*(min-width: in px); ( max-width:in px);
+                          (min-width: in px)and( max-width:in px);                                       */
+    div{
+        background-color: red;
+    }
+}

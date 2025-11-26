@@ -1,0 +1,37 @@
+body{
+    align-self: center;
+}
+.traffic{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 300px;
+    width: 150px;
+
+    
+
+}
+#red{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: red;
+    gap: 10px;
+      
+}
+#yello{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: yellow;
+    gap: 10px;
+}
+#green{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: green;
+    gap: 10px;
+}
+div:hover{
+    background-color:black;
+}

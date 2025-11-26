@@ -1,0 +1,32 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border:2px solid black;
+    display:  inline-block;
+
+}
+#box1{
+    background-image: url(hamster.jpg);
+    background-size: cover;
+}
+#box2{
+    background-image: url(Lion.jpg);
+    background-size: contain;
+}
+#box3{
+    background-image: url(Tiger.jpg);
+    background-size: cover;
+}
+#box4{
+    background-image: url(goldfish.jpg);
+    background-size: cover;
+}
+#box5{
+    background-image: url(Parrot.jpg);
+    background-size: cover;
+}
+body{
+    background-image:url(goldfish.jpg);
+    background-size: contain;
+}
