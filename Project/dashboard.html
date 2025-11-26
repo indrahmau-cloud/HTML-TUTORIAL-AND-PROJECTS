@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">Portal</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="dashboard.html" class="btn" style="background-color: #dc3545;">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Welcome Back, User!</h1>
+
+        <section class="card">
+            <h2>Your Recent Applications</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="background-color: #eee;">
+                        <th style="padding: 10px; text-align: left;">Application ID</th>
+                        <th style="padding: 10px; text-align: left;">Service</th>
+                        <th style="padding: 10px; text-align: left;">Date</th>
+                        <th style="padding: 10px; text-align: left;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px;">A-1001</td>
+                        <td style="padding: 10px;">PAN Card Application</td>
+                        <td style="padding: 10px;">01/10/2025</td>
+                        <td style="padding: 10px;"><span class="status-indicator pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">B-2055</td>
+                        <td style="padding: 10px;">Electricity Bill Payment</td>
+                        <td style="padding: 10px;">25/09/2025</td>
+                        <td style="padding: 10px;"><span class="status-indicator completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">C-0092</td>
+                        <td style="padding: 10px;">Passport Renewal</td>
+                        <td style="padding: 10px;">15/09/2025</td>
+                        <td style="padding: 10px;"><span class="status-indicator pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Quick Actions</h2>
+            <a href="services.html" class="btn" style="margin-right: 15px;">New Application</a>
+            <a href="contact.html" class="btn" style="background-color: #ffc107;">Support Ticket</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSE Common Service Center. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Clone (HTML & CSS)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f1f3f6; }
+
+    /* Header */
+    header {
+      background: #2874f0;
+      padding: 10px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo { font-size: 24px; font-weight: bold; }
+    header .search input {
+      padding: 8px;
+      border: none;
+      border-radius: 2px;
+      width: 300px;
+    }
+    header .cart {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Navbar */
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    nav a:hover { color: #2874f0; }
+
+    /* Product Grid */
+    .products {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      padding: 15px;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #333;
+    }
+    .product-card p { font-size: 14px; color: #555; }
+    .price {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #2874f0;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 13px;
+      margin-left: 6px;
+    }
+
+    /* Footer */
+    footer {
+      background: #172337;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Flipkart <span style="color:yellow;">Clone</span></div>
+    <div class="search"><input type="text" placeholder="Search for products, brands and more"></div>
+    <div class="cart">🛒 Cart</div>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#">Electronics</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Fashion</a>
+    <a href="#">Home</a>
+    <a href="#">Appliances</a>
+    <a href="#">More</a>
+  </nav>
+
+  <!-- Product Grid -->
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x180?text=Mobile" alt="">
+      <h3>Smartphone Pro X</h3>
+      <p>8GB RAM, 128GB</p>
+      <div class="price">₹24,999 <span class="old-price">₹29,999</span></div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x180?text=Laptop" alt="">
+      <h3>Laptop Slim 14”</h3>
+      <p>16GB, 512GB SSD</p>
+      <div class="price">₹45,999 <span class="old-price">₹54,999</span></div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x180?text=TV" alt="">
+      <h3>Smart TV 43”</h3>
+      <p>4K HDR, Android</p>
+      <div class="price">₹27,999 <span class="old-price">₹34,999</span></div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x180?text=Headphones" alt="">
+      <h3>Wireless Headphones</h3>
+      <p>Noise Cancelling</p>
+      <div class="price">₹1,999 <span class="old-price">₹2,999</span></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Flipkart Clone © 2025 — Static Demo (HTML & CSS only)</p>
+  </footer>
+
+</body>
+</html>
